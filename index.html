@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D3 Charts Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="dashboard-header">
+    <h1>D3 Charts Dashboard</h1>
+    <p>TV power consumption</p>
+  </header>
+
+  <main class="dashboard-stack">
+    
+    <!-- CHART 1 -->
+    <div class="chart-card">
+      <div id="scatter-plot" class="svg-holder"></div>
+    </div>
+
+    <!-- CHART 2 -->
+    <div class="chart-card">
+      <div id="line-chart" class="svg-holder"></div>
+    </div>
+
+    <!-- CHART 3 -->
+    <div class="chart-card">
+      <div id="bar-chart" class="svg-holder"></div>
+    </div>
+
+    <!-- CHART 4 -->
+    <div class="chart-card">
+      <div id="donut-chart" class="svg-holder"></div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bryan Liew Yiew Khiong. Built using D3.js v7.</p>
+  </footer>
+
+  <!-- D3 Engine -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  
+  <!-- Chart scripts -->
+  <script src="js/scatter.js"></script>
+  <script src="js/line.js"></script>
+  <script src="js/bar.js"></script>
+  <script src="js/donut.js"></script>
+</body>
+</html>
