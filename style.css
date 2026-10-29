@@ -6,77 +6,77 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #eaeaea;
+    background-color: #f4f6f9;
     color: #333;
-    padding: 0;
+    padding-bottom: 30px;
 }
 
-/* Matching the dominant green dashboard header from the example */
+/* Modern corporate green header header */
 .dashboard-header {
-    text-align: left;
-    padding: 25px 40px;
-    background-color: #4CAF50;
+    background-color: #2e7d32;
     color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 24px 40px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .dashboard-header h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
     margin-bottom: 4px;
 }
 
 .dashboard-header p {
     font-size: 0.95rem;
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
-/* Dashboard content wrapper */
+/* Beautiful 2-column side-by-side card container layout grid */
 .dashboard-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 20px;
-    padding: 30px;
-    max-width: 1600px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-@media (max-width: 600px) {
+/* Responsive breakpoint for laptops/tablets/phones */
+@media (max-width: 992px) {
     .dashboard-grid {
         grid-template-columns: 1fr;
-        padding: 15px;
     }
 }
 
-/* Matching the thin gray bordered boxes from the example */
+/* Card framing */
 .chart-card {
     background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
     padding: 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
 }
 
-.chart-meta h2 {
-    font-size: 1.1rem;
-    color: #222;
-    margin-bottom: 6px;
-    font-weight: bold;
-}
-
-.chart-meta p {
-    font-size: 0.85rem;
-    color: #666;
-    margin-bottom: 15px;
-    line-height: 1.3;
+.chart-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 16px;
+    border-left: 4px solid #4caf50;
+    padding-left: 8px;
 }
 
 .svg-holder {
     width: 100%;
     height: auto;
-    position: relative;
 }
 
 svg {
@@ -87,7 +87,7 @@ svg {
 
 footer {
     text-align: center;
-    padding: 30px;
-    color: #777;
-    font-size: 0.8rem;
+    padding: 40px 20px 10px 20px;
+    color: #888;
+    font-size: 0.85rem;
 }

@@ -3,51 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D3 Charts Dashboard</title>
+  <title>Australian Appliance Energy Analytics</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="dashboard-header">
-    <h1>D3 Charts Dashboard</h1>
-    <p>TV power consumption</p>
+    <div class="header-container">
+      <h1>D3 Appliance Energy Analytics</h1>
+      <p>Australian Household Power Consumption Benchmarks</p>
+    </div>
   </header>
 
-  <main class="dashboard-stack">
+  <main class="dashboard-grid">
     
-    <!-- CHART 1 -->
+    <!-- CHART CARD 1 -->
     <div class="chart-card">
+      <h3>TV Energy Consumption vs. Star Rating</h3>
       <div id="scatter-plot" class="svg-holder"></div>
     </div>
 
-    <!-- CHART 2 -->
+    <!-- CHART CARD 2 -->
     <div class="chart-card">
+      <h3>National Electricity Market Spot Prices (1998 - 2024)</h3>
       <div id="line-chart" class="svg-holder"></div>
     </div>
 
-    <!-- CHART 3 -->
+    <!-- CHART CARD 3 -->
     <div class="chart-card">
+      <h3>Efficiency Comparison (55-Inch Models Only)</h3>
       <div id="bar-chart" class="svg-holder"></div>
     </div>
 
-    <!-- CHART 4 -->
+    <!-- CHART CARD 4 -->
     <div class="chart-card">
+      <h3>Technology Consumption Distribution</h3>
       <div id="donut-chart" class="svg-holder"></div>
     </div>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Bryan Liew Yiew Khiong. Built using D3.js v7.</p>
+    <p>&copy; 2026 Bryan Liew Yiew Khiong. Built with D3.js v7.</p>
   </footer>
 
-  <!-- D3 Engine -->
+  <!-- Official D3.js Core Library Framework -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   
-  <!-- Chart scripts -->
-  <script src="js/scatter.js"></script>
-  <script src="js/line.js"></script>
-  <script src="js/bar.js"></script>
-  <script src="js/donut.js"></script>
+  <script src="scatter.js"></script>
+  <script src="line.js"></script>
+  <script src="bar.js"></script>
+  <script src="donut.js"></script>
 </body>
 </html>
